@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love message</title>
+    <!--CSS-->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body onload="typeWriter()">
+<ul class="relative-cover">
+<li class="absolute-cover">
+    <!--Text-->
+    <div class="text-message msg">
+<span style="color: black; opacity: 0;"> It all started with a simple text, a great friendship that healed wounds,
+your fragility gave me strength to conquer and obstacle to be with you.
+    <br> <br>
+I never imagined to have so much care and love from a person in my life,
+the way we think alike and always know when to calm each other.</span>
+
+<span id="demo" class="type">
+
+</span>
+
+</div>
+
+<!--picture scroll cover-->
+<div class="scroll-container">
+    <!--Images-->
+    <div class="image-cover">
+        <img src="./images/img-1.png"/>
+    </div>
+
+    <!--3 dots-->
+    <div class="dots">
+        <div class="dot-1 dot-active"><div></div></div>
+        <div class="dot-2"></div>
+        <div class="dot-3"></div>
+    </div>
+
+    <!--next btn-->
+    <div class="next-btn"> <img src="./images/arrow.svg"> </div>
+</div>
+</li>
+<!--end-->
+
+<!--second-->
+<li class="absolute-cover">
+    <!--Text-->
+    <div class="text-message">
+It all started with a simple text, a great friendship that healed wounds,
+your fragility gave me strength to conquer and obstacle to be with you.
+    <br> <br>
+I never imagined to have so much care and love from a person in my life,
+the way we think alike and always know when to calm each other.
+    </div>
+
+<!--picture scroll cover-->
+<div class="scroll-container">
+    <!--Images-->
+    <div class="image-cover">
+        <img src="./images/img-2.png"/>
+    </div>
+
+    <!--3 dots-->
+    <div class="dots">
+        <div class="dot-1"></div>
+        <div class="dot-2 dot-active"><div></div></div>
+        <div class="dot-3"></div>
+    </div>
+
+    <!--next btn-->
+    <div class="next-btn"> <img src="./images/arrow.svg"> </div>
+</div>
+</li>
+<!--end-->
+
+<!--third-->
+<li class="absolute-cover last-childer">
+    <!--Text-->
+    <div class="text-message">
+It all started with a simple text, a great friendship that healed wounds,
+your fragility gave me strength to conquer and obstacle to be with you.
+    <br> <br>
+I never imagined to have so much care and love from a person in my life,
+the way we think alike and always know when to calm each other.
+    </div>
+
+<!--picture scroll cover-->
+<div class="scroll-container">
+    <!--Images-->
+    <div class="image-cover vid-cover">
+        <!-- <img src="./images/img-2.png"/> -->
+        <video src='./images/video.mp4' controls> </video>
+    </div>
+
+    <!--3 dots-->
+    <div class="dots">
+        <div class="dot-1"></div>
+        <div class="dot-2"></div>
+        <div class="dot-3 dot-active"><div></div></div>
+    </div>
+
+    <!--next btn-->
+    <div class="next-btn"> <img src="./images/arrow.svg"> </div>
+</div>
+</li>
+<!--end-->
+<ul> 
+
+
+<script src="./main.js"> </script>
+<script>
+    var i = 0;
+    var txt = `It all started with a simple text, a great friendship that healed wounds, your fragility gave me strength to conquer and obstacle to be with you. I never imagined to have so much care and love from a person in my life, the way we think alike and always know when to calm each other.`
+    
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
+</body>
+</html>
