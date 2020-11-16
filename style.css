@@ -37,13 +37,13 @@ ul {
     color: white;
     padding: 10px 5%;
     /* background: red; */
-    height: 150px;
+    height: 165px;
     overflow: scroll;
     overflow-x: hidden;
     margin: 20px auto;
     width: unset;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 
@@ -70,7 +70,6 @@ ul {
 .dots {
     display: flex;
     justify-content: center;
-    column-gap: 5px;
     margin: 10px 0px;
 }
 
