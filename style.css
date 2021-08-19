@@ -15,7 +15,7 @@ ul {
 }
 
 .image-cover {
-    width: 200px;
+    width: 250px;
     height: auto;
     margin: 0px auto;
 }
@@ -182,4 +182,11 @@ ul {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
     animation: float 3.5s ease-in-out infinite;
+}
+
+.laugh {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
 }
